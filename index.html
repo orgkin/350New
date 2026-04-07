@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Balance 520</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* MENÚ */
+header {
+  background: black;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  background: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff') no-repeat center/cover;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 40px;
+}
+
+/* PRODUCTO */
+.producto {
+  text-align: center;
+  padding: 40px;
+}
+
+.producto img {
+  width: 300px;
+}
+
+button {
+  background: black;
+  color: white;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Zapatillas Store</h1>
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#producto">Producto</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>New Balance 520</h2>
+  <p>Comodidad y estilo en cada paso</p>
+</section>
+
+<section id="producto" class="producto">
+  <h2>New Balance 520</h2>
+  <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="Zapatillas">
+  <p><strong>Precio: $120.000 COP</strong></p>
+  <p>Tallas disponibles: 37 - 43</p>
+
+  <a href="https://wa.me/573208781879?text=Hola%20quiero%20comprar%20las%20New%20Balance%20520">
+    <button>Comprar por WhatsApp</button>
+  </a>
+</section>
+
+<section id="contacto" class="producto">
+  <h2>Contacto</h2>
+  <p>Escríbenos para más información</p>
+</section>
+
+<a class="whatsapp" href="https://wa.me/573208781879?text=Hola%20quiero%20informacion" target="_blank">
+  💬
+</a>
+
+</body>
+</html>
