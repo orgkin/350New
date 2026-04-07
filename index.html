@@ -1,46 +1,85 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html><html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>New Balance 520</title>
-
-<style>
+<title>Zapatillas Storeking</title><style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
-/* MENÚ */
+/* MENÚ FLOTANTE */
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background: black;
   color: white;
   padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000;
 }
 
 header h1 {
   margin: 0;
 }
 
-nav a {
+/* MENÚ DESPLEGABLE */
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-btn {
+  background: black;
   color: white;
-  margin-left: 15px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.menu-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: #222;
+  min-width: 150px;
+}
+
+.menu-content a {
+  color: white;
+  padding: 10px;
+  display: block;
   text-decoration: none;
+}
+
+.menu-content a:hover {
+  background: #444;
+}
+
+.menu:hover .menu-content {
+  display: block;
 }
 
 /* HERO */
 .hero {
+  margin-top: 70px;
   background: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff') no-repeat center/cover;
   color: white;
-  padding: 100px 20px;
+  padding: 120px 20px;
   text-align: center;
 }
 
 .hero h2 {
-  font-size: 40px;
+  font-size: 42px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 500px;
+  margin: auto;
 }
 
 /* PRODUCTO */
@@ -74,44 +113,29 @@ button {
   border-radius: 50%;
   text-decoration: none;
 }
-</style>
-</head>
-
-<body>
-
-<header>
-  <h1>Zapatillas Store</h1>
-  <nav>
-    <a href="#">Inicio</a>
-    <a href="#producto">Producto</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-</header>
-
-<section class="hero">
+</style></head><body><header>
+  <h1>Storeking 👟</h1>  <div class="menu">
+    <button class="menu-btn">☰ Menú</button>
+    <div class="menu-content">
+      <a href="#">Inicio</a>
+      <a href="#producto">Producto</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </div>
+</header><section class="hero">
   <h2>New Balance 520</h2>
-  <p>Comodidad y estilo en cada paso</p>
-</section>
-
-<section id="producto" class="producto">
+  <p>🔥 Camina con estilo, corre con confianza y destaca donde vayas. Las New Balance 520 combinan comodidad extrema con un diseño moderno que te hará sentir imparable. ¡Perfectas para tu día a día o para romperla en la calle! 😎</p>
+</section><section id="producto" class="producto">
   <h2>New Balance 520</h2>
   <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="Zapatillas">
   <p><strong>Precio: $120.000 COP</strong></p>
-  <p>Tallas disponibles: 37 - 43</p>
-
-  <a href="https://wa.me/573208781879?text=Hola%20quiero%20comprar%20las%20New%20Balance%20520">
+  <p>Tallas disponibles: 37 - 43</p>  <a href="https://wa.me/573208781879?text=Hola%20quiero%20comprar%20las%20New%20Balance%20520">
     <button>Comprar por WhatsApp</button>
   </a>
-</section>
-
-<section id="contacto" class="producto">
+</section><section id="contacto" class="producto">
   <h2>Contacto</h2>
   <p>Escríbenos para más información</p>
-</section>
-
-<a class="whatsapp" href="https://wa.me/573208781879?text=Hola%20quiero%20informacion" target="_blank">
+</section><a class="whatsapp" href="https://wa.me/573208781879?text=Hola%20quiero%20informacion" target="_blank">
   💬
-</a>
-
-</body>
-</html>
+</a></body>
+</html>6
